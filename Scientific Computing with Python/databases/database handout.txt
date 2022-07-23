@@ -32,6 +32,7 @@ Multi-Table SQL:
 
 CREATE TABLE "Artist" (
     "id" INTEGER PRIMARY KEY AUTOINCREMENT NOT NULL UNIQUE, 
+
     "name" TEXT)
 
 CREATE TABLE "Album" (
