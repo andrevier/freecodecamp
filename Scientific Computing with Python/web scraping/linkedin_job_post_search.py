@@ -28,8 +28,8 @@ if __name__ == '__main__':
   driver = webdriver.Chrome(service=Service(ChromeDriverManager().install()))
     
   # Login 
-  # EMAIL = 'andre_rangel@id.uff.br'
-  # PASSWORD = 'D2dos108@'
+  # EMAIL = 
+  # PASSWORD = 
   
   #driver.get("https://www.linkedin.com/uas/login")
   #time.sleep(3)
@@ -91,6 +91,9 @@ if __name__ == '__main__':
 
     for data in soup.findAll(criteria_selector_tag, {criteria_selector_type, criteria_selector}):
       f.write(data.string.lstrip() + '\n')
+    
+    # Post link
+    f.write(post_link + '\n')
 
     # Post
     for elem in soup.findAll(post_selector_tag, {post_selector_type, post_selector}):
